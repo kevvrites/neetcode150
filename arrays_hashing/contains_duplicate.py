@@ -17,6 +17,5 @@ if __name__ == '__main__':
     expected = (True, False, True)
 
     for i, exp in enumerate(expected):
-        print(cases[i], expected, containsDuplicate(cases[i]))
         assert containsDuplicate(cases[i]) == expected[i]
     print('ok')
