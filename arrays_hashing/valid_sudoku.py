@@ -15,7 +15,6 @@ def isValidSudoku(board):
             cols[c].add(board[r][c])
             rows[r].add(board[r][c])
             boxes[r // 3, c // 3].add(board[r][c])
-    print(boxes)
     return True
 
 if __name__ == '__main__':
