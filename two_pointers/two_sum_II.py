@@ -1,17 +1,13 @@
 def twoSum(nums, target):
-    ans = []
     l = 0
     r = len(nums) - 1
     while l < r:
         if nums[l] + nums[r] > target:
-            print(nums[l], nums[r])
             r -= 1
         elif nums[l] + nums[r] < target:
             l += 1
         else:
-            ans.append(l + 1)
-            ans.append(r + 1)
-            return ans
+            return [l + 1, r + 1]
 
 if __name__ == "__main__":
     case1 = [[2,7,11,15], 9]
